@@ -1,0 +1,199 @@
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e1e; /* Dark Background */
+    color: #fff; /* White text for contrast */
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 25px;
+    background-color: #222; /* Darker container background */
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .container:hover {
+    transform: scale(1.05);
+  }
+  
+  h1 {
+    font-size: 36px;
+    color: #39FF14; /* Neon Green for Text */
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 0 0 10px #39FF14, 0 0 20px #39FF14; /* Neon Light Effect */
+  }
+  
+  /* Heading and Icon Styling */
+  img {
+    margin-bottom: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Popup Styling */
+  .popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .popup-content {
+    background-color: #222;
+    padding: 30px;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    animation: popupMove 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @keyframes popupMove {
+    0% { transform: translateY(-50px); }
+    100% { transform: translateY(0); }
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 28px;
+    color: #fff;
+    cursor: pointer;
+    text-shadow: 0 0 5px #39FF14;
+  }
+  
+  .close-btn:hover {
+    color: #ff0000;
+  }
+  
+  /* Label and Input Field Styling */
+  label {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #39FF14; /* Neon Green */
+    display: block;
+    font-weight: 600;
+  }
+  
+  input, select, textarea {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #333;
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color: #333;
+    color: #fff;
+    transition: border 0.3s ease;
+  }
+  
+  input[type="file"] {
+    padding: 8px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+  
+  input:focus, select:focus, textarea:focus {
+    border-color: #39FF14;
+    outline: none;
+  }
+  
+  /* Button Styling */
+  button {
+    background-color: #39FF14;
+    color: white;
+    padding: 14px 30px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-shadow: 0 0 10px #39FF14, 0 0 20px #39FF14; /* Neon glow effect */
+  }
+  
+  button:hover {
+    background-color: #32cc12;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  button:active {
+    background-color: #2a9d11;
+  }
+  
+  /* File Upload Styling */
+  input[type="file"] {
+    font-size: 14px;
+    background-color: #444;
+    border: 1px solid #333;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  input[type="file"]:hover {
+    background-color: #555;
+    border: 1px solid #666;
+  }
+  
+  /* File Upload Placeholder */
+  input[type="file"]::-webkit-file-upload-button {
+    color: #39FF14;
+    font-size: 16px;
+    background-color: #222;
+    padding: 10px 15px;
+    border: 1px solid #39FF14;
+    border-radius: 8px;
+  }
+  
+  input[type="file"]:hover::-webkit-file-upload-button {
+    background-color: #333;
+  }
+  
+  /* Form Success Message */
+  .success-message {
+    color: #39FF14;
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: bold;
+    animation: bounce 1s ease infinite;
+  }
+  
+  @keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+  }
+  
